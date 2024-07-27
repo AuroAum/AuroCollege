@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(315deg, rgba(237, 15, 15, 0) 36.56836854460093%, rgba(68,241,176, 100%) 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: -400px 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            width: 400px;
+            margin: 100px auto 0;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .register {
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            font-size: 18px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+            color: #fff;
+            padding: 20px;
+        }
+
+        form#register {
+            margin: 0;
+        }
+
+        label {
+            font-size: 16px;
+            font-style: italic;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 7px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            outline: none;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 3px;
+            background-color: rgba(250, 100, 0, 0.8);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="register">
+        <h2>REGISTRATION FORM</h2>
+        <form id="register" method="post" align="center">
+            <label for="fname">First Name:</label><br>
+            <input type="text" name="fname" id="fname" placeholder="Enter your first name" required><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" name="lname" id="lname" placeholder="Enter your last name" required><br>
+            <label for="age">Age:</label><br>
+            <input type="number" name="age" id="age" placeholder="Enter your age" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter valid email" required><br>
+            <label for="address">Address:</label><br>
+            <input type="text" name="address" id="address" placeholder="Enter valid address" required><br>
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+            <label for="contact">Contact No:</label><br>
+            <input type="tel" name="contact" id="contact" placeholder="Enter contact no." required><br>
+            <label for="category">Category:</label><br>
+            <select id="category" name="category" required>
+                <option value="general">General</option>
+                <option value="sc">SC</option>
+                <option value="st">ST</option>
+                <option value="obc">OBC</option>
+            </select><br>
+            <label for="course">Course:</label><br>
+            <select id="course" name="course" required>
+                <option value="Basic Computer">Basic Computer</option>
+                <option value="Advanced Computer">Advanced Computer</option>
+                <option value="Programming">Programming</option>
+            </select><br>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <input type="submit" value="Submit" name="submit" id="submit">
+        </form>
+    </div><!--end register-->
+</div><!--end main-->
+</body>
+</html>
